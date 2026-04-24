@@ -6,37 +6,37 @@ Bu proje, bir telekomünikasyon şirketindeki müşterilerin hizmeti terk etme (
 
 <br>Akıllı API: FastAPI framework'ü ile modern, hızlı ve otomatik dökümantasyona sahip (Swagger UI) bir servis oluşturuldu.
 
-<brTürkçe Arayüz: API parametreleri ve yanıtları, projenin daha iyi anlaşılabilmesi için tamamen Türkçeleştirildi.
+<br>Türkçe Arayüz: API parametreleri ve yanıtları, projenin daha iyi anlaşılabilmesi için tamamen Türkçeleştirildi.
 
-<brHata Analizi: Sadece başarı oranı değil, Confusion Matrix (Hata Matrisi) ve Feature Importance (Özellik Önemi) analizleri yapıldı.
+<br>Hata Analizi: Sadece başarı oranı değil, Confusion Matrix (Hata Matrisi) ve Feature Importance (Özellik Önemi) analizleri yapıldı.
 
-<br🛠️ Kullanılan Teknolojiler<br
-<brVeri Analizi: Pandas, NumPy
+<br>🛠️ Kullanılan Teknolojiler<br>
+<b>rVeri Analizi: Pandas, NumPy
 
-<brMakine Öğrenmesi: Scikit-Learn, XGBoost, CatBoost
+<br>Makine Öğrenmesi: Scikit-Learn, XGBoost, CatBoost
 
-<brAPI Geliştirme: FastAPI, Uvicorn, Pydantic
+<br>API Geliştirme: FastAPI, Uvicorn, Pydantic
 
-<brModel Saklama: Joblib
+<br>Model Saklama: Joblib
 
-<br📁 Proje Yapısı<br
+<br>📁 Proje Yapısı<br>
 Plaintext
 ├── main.py              # FastAPI uygulama kodu
 ├── churn_model.pkl      # Eğitilmiş XGBoost modeli
 ├── scaler.pkl           # Veri ölçeklendirme dosyası
 ├── requirements.txt     # Gerekli kütüphaneler listesi
 └── README.md            # Proje dökümantasyonu
-<br⚙️ Kurulum ve Çalıştırma<br
+<br>⚙️ Kurulum ve Çalıştırma<br>
 Gerekli paketleri yükleyin:
 
-<brBash
-<brpip install -r requirements.txt
-<brAPI'yi başlatın:
+<br>Bash
+<br>pip install -r requirements.txt
+<br>API'yi başlatın:
 
-<brBash
-<brpython main.py
-<brTest Etme:
-<brTarayıcınızdan http://127.0.0.1:8000/docs adresine giderek, interaktif arayüz üzerinden farklı müşteri senaryolarını test edebilirsiniz.
+<br>Bash
+<br>python main.py
+<br>Test Etme:
+<br>Tarayıcınızdan http://127.0.0.1:8000/docs adresine giderek, interaktif arayüz üzerinden farklı müşteri senaryolarını test edebilirsiniz.
 
-<br🔍 Model Analizi<br
-<brModel eğitilirken sadece doğruluğa (Accuracy) değil, verinin dengesiz yapısına da dikkat edilmiştir. Yapılan analizlerde müşterilerin Sözleşme Tipi (Contract) ve <brMüşterilik Süresi (Tenure) değişkenlerinin, ayrılma kararında en belirleyici faktörler olduğu saptanmıştır.
+<br>🔍 Model Analizi<br>
+<br>Model eğitilirken sadece doğruluğa (Accuracy) değil, verinin dengesiz yapısına da dikkat edilmiştir. Yapılan analizlerde müşterilerin Sözleşme Tipi (Contract) ve Müşterilik Süresi (Tenure) değişkenlerinin, ayrılma kararında en belirleyici faktörler olduğu saptanmıştır.
